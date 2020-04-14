@@ -13,21 +13,19 @@
         }
 
         h1 {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
             font-family: Arial, Helvetica, sans-serif;
             font-size: 40px;
             text-align: center;
             text-transform: uppercase;
         }
 
-        .container {
-            position: relative;
-            padding: 30px;
-            width: 25%;
-            height: 150px;
-            margin: 0 auto;
-        }
-
         .square {
+            position: absolute;
+            top: 10%;
+            left: calc(50% - 40px);
             border: 4px solid black;
             width: 80px;
             height: 80px;
@@ -59,8 +57,9 @@
         }
 
         .twoSquares {
-            margin-top: 50px;
             position: absolute;
+            top: 30%;
+            left: calc(50% - 35px);
             width: 35px;
             height: 35px;
         }
@@ -95,15 +94,44 @@
                 transform: rotate(360deg);
             }
         }
+
+        p.loading {
+            position: absolute;
+            font-size: 40px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+        }
+
+        span.loading {
+            position: relative;
+
+        }
+
+        span.loading::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            right: 0;
+            background: white;
+            animation: dots 3s steps(4, end) infinite;
+        }
+
+        @keyframes dots {
+            100% {
+                right: -100%;
+            }
+        }
     </style>
 </head>
 
 <body>
     <h1>css loading spinners</h1>
-    <div class="container">
-        <div class="square"></div>
-        <div class="twoSquares"></div>
-    </div>
+    <div class="square"></div>
+    <div class="twoSquares"></div>
+    <p class="loading">Loading<span class="loading"> . . . .</span></p>
 </body>
 
 </html>

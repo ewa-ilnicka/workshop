@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pong animation</title>
+
+    <style>
+        html {
+            /* table */
+            --tableWidth: 700px;
+            --tableHeight: 400px;
+            --tableColor: white;
+            /* paddle */
+            --paddleWidth: 25px;
+            --paddleHeight: 80px;
+            --paddleColor: black;
+            /* ball */
+            --ballSize: 20px;
+            --ballColor: red;
+            /* position */
+            --paddleFromEdge: 50px;
+            /* animation time */
+            --animationTime: 3s;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .table,
+        .ball,
+        .paddle,
+        .result {
+            position: absolute;
+        }
+
+        .table {
+            width: var(--tableWidth);
+            height: var(--tableHeight);
+            background-color: var(--tableColor);
+            position: absolute;
+            border: 2px solid black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .ball {
+            width: var(--ballSize);
+            height: var(--ballSize);
+            top: calc(50% - var(--paddleHeight)/2);
+            left: calc((var(--paddleFromEdge)) + (var(--ballSize)));
+            background-color: var(--ballColor);
+            border-radius: 50%;
+            animation: ballMove var(--animationTime) linear infinite alternate;
+
+        }
+
+        .paddle {
+            width: var(--paddleWidth);
+            height: var(--paddleHeight);
+            background-color: var(--paddleColor);
+        }
+
+        .left {
+            top: 10%;
+            left: var(--paddleFromEdge);
+            animation: leftPaddle var(--animationTime) linear infinite alternate;
+        }
+
+        .right {
+            top: calc(50% - var(--paddleHeight)/2);
+            right: var(--paddleFromEdge);
+            animation: rightPaddle var(--animationTime) linear infinite alternate;
+        }
+
+
+        @keyframes ballMove {
+
+            0% {
+                top: 50%;
+                left: 10%;
+            }
+
+            25% {
+                top: calc(100% - var(--ballSize));
+                left: 45%
+            }
+
+            50% {
+                top: 50%;
+                left: 87%;
+            }
+
+            75% {
+                top: 0%;
+                left: 45%
+            }
+
+            100% {
+                top: 50%;
+                left: 10%
+            }
+
+        }
+
+        @keyframes rightPaddle {
+            0% {
+                top: 45%;
+
+            }
+
+            25% {
+                top: 70%;
+
+            }
+
+            50% {
+                top: 45%;
+
+            }
+
+            75% {
+                top: 10%;
+
+            }
+
+            100% {
+                top: 45%;
+
+            }
+        }
+
+        @keyframes leftPaddle {
+            0% {
+                top: 45%;
+
+            }
+
+            25% {
+                top: 10%;
+
+            }
+
+            50% {
+                top: 45%;
+
+            }
+
+            75% {
+                top: 70%;
+
+            }
+
+            100% {
+                top: 45%;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table">
+        <div class="ball"></div>
+        <div class="paddle left"></div>
+        <div class="paddle right"></div>
+    </div>
+</body>
+
+</html>

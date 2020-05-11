@@ -48,4 +48,12 @@ function Snake() {
                 break;
         }
     }
+
+    this.eat = function (fruit) {
+        //console.log(fruit);
+        if (this.x === fruit.x && this.y === fruit.y) {
+            return true;
+        }
+        return false;
+    }
 }

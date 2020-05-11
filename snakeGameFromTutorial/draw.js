@@ -9,9 +9,13 @@ var snake;
 
 (function setup() {
     snake = new Snake();
+    fruit = new Fruit();
+    fruit.pickLocation();
+    // console.log(fruit);
 
     window.setInterval(() => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+        fruit.draw();
         snake.update();
         snake.draw();
     }, 250);

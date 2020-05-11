@@ -4,6 +4,7 @@ const ctx = canvas.getContext("2d");
 const scale = 10;
 const rows = canvas.height / scale;
 const columns = canvas.width / scale;
+var snake;
 
 var snake;
 
@@ -23,6 +24,11 @@ var snake;
             //console.log("EATING");
             fruit.pickLocation();
         }
+
+        snake.checkCollision();
+        document.querySelector('.score')
+            .innerText = snake.total;
+
     }, 250);
 }());
 

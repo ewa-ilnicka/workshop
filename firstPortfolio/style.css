@@ -4,8 +4,3 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-header,
-section {
-    min-height: 100vh;
-}

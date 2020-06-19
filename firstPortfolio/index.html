@@ -10,15 +10,11 @@
 
 <body>
     <nav>
-        <ul>
-            <li>
-                <a href="#">Start</a>
-                <a href="#">About me</a>
-                <a href="#">My skills</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
+        <a class="start" href="#">Start</a>
+        <a class="about" href="#">About me</a>
+        <a class="skills" href="#">My skills</a>
+        <a class="portfolio" href="#">Projects</a>
+        <a class="contact" href="#">Contact</a>
     </nav>
     <header>
         <div class="container">
@@ -33,15 +29,24 @@
             </div>
         </div>
     </header>
-    <section class="about">About me</section>
-    <section class="skills">Skills</section>
-    <section class="portfolio">My projects</section>
-    <section class="contact">Contact me</section>
+    <section id="about" class="sectionAbout">About me</section>
+    <section id="skills" class="sectionSkills">Skills</section>
+    <section id="portfolio" class="sectionPortfolio">My projects</section>
+    <section id="contact" class="sectionContact">Contact me</section>
     <footer>2020 Ewa Ilnicka</footer>
-    <script src="js/script.js"></script>
     <script src="js/TweenLite.min.js"></script>
     <script src="js/EasePack.min.js"></script>
     <script src="js/demo-1.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $('nav a').on('click', function () {
+            const goToSection = "#" + $(this).attr('class');
+            $('body, html').animate({
+                scrollTop: $(goToSection).offset().top - 80
+            }, 1000)
+        })
+    </script>
 
 </body>
 

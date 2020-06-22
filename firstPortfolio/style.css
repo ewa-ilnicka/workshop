@@ -5,6 +5,27 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 20px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    flex-grow: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
 header,
 section {
     min-height: 100vh;
@@ -54,28 +75,9 @@ section {
 
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    padding: 20px;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-nav a {
-    flex-grow: 1;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-}
-
 nav a:hover {
     text-decoration: underline;
+    color: rgba(156, 217, 249);
 }
 
 .sectionAbout {

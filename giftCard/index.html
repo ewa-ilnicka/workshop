@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzień Ojca</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            background-image: linear-gradient(to right, #e394a2 0, #b61e38 100%);
+
+        }
+
+        h2,
+        h1 {
+            font-family: 'Lora', serif;
+
+        }
+
+        .heart {
+            fill: red;
+            position: relative;
+            top: 5px;
+            width: 70px;
+            animation: pulse 1s ease infinite;
+        }
+
+        p {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .letter {
+            background-color: #E7DCDE;
+            width: 400px;
+            padding: 48px;
+            position: relative;
+            max-width: 90vw;
+            margin: 5vh auto;
+            border-radius: 15px;
+            border: 2px solid #6E4667;
+            -webkit-box-shadow: 28px 21px 22px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 28px 21px 22px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 28px 21px 22px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .modal-window {
+            position: fixed;
+            background-color: rgba(255, 255, 255, 0.25);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 1.8s;
+        }
+
+        .modal-window>div {
+            border-radius: 15px;
+            border: 2px solid;
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 2em;
+            background: #ffffff;
+            color: #333333;
+
+
+        }
+
+        .modal-close {
+            color: #aaa;
+            line-height: 50px;
+            font-size: 80%;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 0;
+            width: 70px;
+            text-decoration: none;
+        }
+
+        .modal-window:target {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.3);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .letter {
+            -webkit-animation-name: zoomIn;
+            animation-name: zoomIn;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        @-webkit-keyframes zoomIn {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.3, .3, .3);
+                transform: scale3d(.3, .3, .3);
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.3, .3, .3);
+                transform: scale3d(.3, .3, .3);
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="letter">
+        <div class="intro">
+            <h2 class="main-title">Dzień Ojca</h2>
+            <p>Z okazji Dnia Ojca</p>
+            <p><strong>chciałabym Ci życzyć</strong></p>
+        </div>
+    </div>
+    <iframe src="https://giphy.com/embed/Y1NHetVJ8Hc9zqtrAk" width="480" height="270" frameBorder="0"
+        class="giphy-embed" allowFullScreen></iframe>
+    <p>Wiadomość jest ukryta pod serduszkiem! Kliknij!</p>
+
+    <a class="open-modal" href="#open-modal"><svg class="heart btn" viewBox="0 0 32 29.6">
+            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+    c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+        </svg></a> </div>
+    <div id="open-modal" class="modal-window">
+        <div>
+            <a href="#" class="modal-close">Zamknij</a>
+            <h1>Kochany tato!</h1>
+            <div>
+                <p>Zokazji Dnia Ojca życzę Ci dużo cierpliwośći</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

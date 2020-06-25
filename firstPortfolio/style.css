@@ -73,6 +73,7 @@ section {
     background-color: rgba(100, 100, 100, 0.5);
     min-width: 30vw;
     min-height: 50vh;
+    filter: drop-shadow(16px 16px 20px rgba(156, 217, 249));
 
 }
 
@@ -99,5 +100,4 @@ nav a:hover {
     overflow: hidden;
     background-size: cover;
     background-position: center center;
-    filter: brightness(0.4) drop-shadow(16px 16px 20px rgba(156, 217, 249));
 }

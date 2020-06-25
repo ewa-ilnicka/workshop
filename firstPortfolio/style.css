@@ -39,6 +39,7 @@ section {
     background-size: cover;
     background-position: center center;
     z-index: 1;
+    filter: drop-shadow(16px 16px 20px rgba(156, 217, 249));
 }
 
 .large-header {
@@ -80,9 +81,6 @@ nav a:hover {
     color: rgba(156, 217, 249);
 }
 
-.sectionAbout {
-    background-color: royalblue;
-}
 
 .sectionSkills {
     background-color: slateblue;
@@ -94,4 +92,12 @@ nav a:hover {
 
 .sectionContact {
     background-color: thistle;
+}
+
+.sectionAbout {
+    background-image: url(resources/header2.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(0.4) drop-shadow(16px 16px 20px rgba(156, 217, 249));
 }

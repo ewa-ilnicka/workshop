@@ -28,7 +28,7 @@ nav a {
 
 header,
 section {
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .content {
@@ -39,14 +39,11 @@ section {
     background-size: cover;
     background-position: center center;
     z-index: 1;
-    filter: drop-shadow(16px 16px 20px rgba(156, 217, 249));
 }
 
 .large-header {
     background-color: rgba(0, 0, 0, 0.5);
 }
-
-
 
 .small-header {
     position: absolute;
@@ -61,7 +58,6 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-
 }
 
 .photo,
@@ -96,8 +92,25 @@ nav a:hover {
 }
 
 .sectionAbout {
-    background-image: url(resources/header2.jpg);
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
+    background-color: #100e0f;
+    color: white;
+}
+
+.sectionAbout h2 {
+    color: rgb(156, 217, 249);
+    animation: glow 2s ease-in-out infinite alternate;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #2d9da9;
+    }
+
+    to {
+        text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
 }

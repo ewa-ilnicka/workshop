@@ -21,7 +21,7 @@
         }
 
         canvas {
-            background-color: white;
+            border: 3px solid white;
         }
     </style>
 </head>
@@ -37,6 +37,23 @@
 
         const cw = canv.width;
         const ch = canv.height;
+        const ballSize = 20;
+        let ballX = cw / 2 - ballSize / 2;
+        let ballY = ch / 2 - ballSize / 2;
+
+
+        function table() {
+            ctx.fillStyle = '#000';
+            ctx.fillRect(0, 0, cw, ch);
+        }
+
+        function ball() {
+            ctx.fillStyle = '#fff';
+            ctx.fillRect(ballX, ballY, ballSize, ballSize);
+        }
+
+        table();
+        ball();
     </script>
 </body>
 

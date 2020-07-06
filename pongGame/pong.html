@@ -51,10 +51,18 @@
         let playerY = 200;
         let aiY = 200;
 
+        const lineWidth = 6;
+        const lineHeight = 16;
+
 
         function table() {
             ctx.fillStyle = '#000';
             ctx.fillRect(0, 0, cw, ch);
+
+            for (let linePosition = 20; linePosition < ch; linePosition += 30) {
+                ctx.fillStyle = 'grey';
+                ctx.fillRect(cw / 2 - lineWidth / 2, linePosition, lineWidth, lineHeight);
+            }
         }
 
         function ball() {

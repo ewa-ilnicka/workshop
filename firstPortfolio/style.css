@@ -99,7 +99,7 @@ nav a:hover {
 .sectionAbout h2 {
     color: rgb(156, 217, 249);
     animation: glow 2s ease-in-out infinite alternate;
-    font-size: 2rem;
+    font-size: 4rem;
     text-transform: uppercase;
 }
 

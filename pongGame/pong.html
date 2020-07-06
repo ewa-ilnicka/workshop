@@ -5,10 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pong Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: grey;
+        }
+
+        canvas {
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
+    <canvas>
+    </canvas>
+    <script>
+        const canv = document.querySelector('canvas');
+        const ctx = canv.getContext('2d');
+        canv.width = 1000;
+        canv.height = 500;
 
+        const cw = canv.width;
+        const ch = canv.height;
+    </script>
 </body>
 
 </html>

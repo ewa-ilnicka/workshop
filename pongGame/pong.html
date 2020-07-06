@@ -54,6 +54,9 @@
         const lineWidth = 6;
         const lineHeight = 16;
 
+        let ballSpeedX = 1;
+        let ballSpeedY = 1;
+
 
         function table() {
             ctx.fillStyle = '#000';
@@ -68,6 +71,9 @@
         function ball() {
             ctx.fillStyle = '#fff';
             ctx.fillRect(ballX, ballY, ballSize, ballSize);
+
+            ballX += ballSpeedX;
+            ballY += ballSpeedY;
         }
 
         function player() {
@@ -80,10 +86,13 @@
             ctx.fillRect(aiX, aiY, paddleWidth, paddleHeight);
         }
 
-        table();
-        ball();
-        player();
-        ai();
+        function game() {
+            table();
+            ball();
+            player();
+            ai();
+        }
+        setInterval(game, 1000 / 60);
     </script>
 </body>
 

@@ -93,6 +93,14 @@
             ctx.fillRect(aiX, aiY, paddleWidth, paddleHeight);
         }
 
+        window.addEventListener('mousemove', playerPosition);
+        topCanvas = canv.offsetTop;
+
+        function playerPosition(e) {
+            playerY = e.clientY - topCanvas - paddleHeight / 2;
+        }
+
+
         function game() {
             table();
             ball();

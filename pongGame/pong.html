@@ -54,8 +54,8 @@
         const lineWidth = 6;
         const lineHeight = 16;
 
-        let ballSpeedX = 1;
-        let ballSpeedY = 1;
+        let ballSpeedX = 2;
+        let ballSpeedY = 2;
 
 
         function table() {
@@ -77,9 +77,11 @@
 
             if (ballY <= 0 || ballY + ballSize >= ch) {
                 ballSpeedY = -ballSpeedY;
+                speedUp();
             }
             if (ballX <= 0 || ballX + ballSize >= cw) {
                 ballSpeedX = -ballSpeedX;
+                speedUp();
             }
         }
 
@@ -98,6 +100,26 @@
 
         function playerPosition(e) {
             playerY = e.clientY - topCanvas - paddleHeight / 2;
+            if (playerY >= ch - paddleHeight) {
+                playerY = ch - paddleHeight;
+            }
+            if (playerY <= 0) {
+                playerY = 0;
+            }
+        }
+
+        function speedUp() {
+            if (ballSpeedX > 0 && ballSpeedX < 16) {
+                ballSpeedX += 0.4;
+            } else if (ballSpeedX < 0 && ballSpeedX > -16) {
+                ballSpeedX -= 0.4;
+            }
+
+            if (ballSpeedY > 0 && ballSpeedY < 16) {
+                ballSpeedY += 0.4;
+            } else if (ballSpeedY < 0 && ballSpeedY > -16) {
+                ballSpeedY -= 0.4;
+            }
         }
 
 

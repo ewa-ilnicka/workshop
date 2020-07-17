@@ -57,6 +57,8 @@
         let ballSpeedX = 2;
         let ballSpeedY = 2;
 
+        let topCanvas = canv.offsetTop;
+
 
         function table() {
             ctx.fillStyle = '#000';
@@ -79,11 +81,30 @@
                 ballSpeedY = -ballSpeedY;
                 speedUp();
             }
-            if (ballX <= 0 || ballX + ballSize >= cw) {
-                ballSpeedX = -ballSpeedX;
-                speedUp();
+            if (ballX <= 0) {
+                ballX = aiX - paddleWidth - ballSize / 2;
+                ballY = aiY + paddleHeight / 2 - ballSize / 2;
+            }
+            if (ballX > cw) {
+                ballX = playerX + paddleWidth + ballSize / 2;
+                ballY = playerY + paddleHeight / 2 - ballSize / 2;
+            }
+            if (ballX <= playerX + paddleWidth && ballX > playerX + paddleWidth / 2) {
+                if (ballY < playerY + paddleHeight / 2 && ballY > playerY - ballSize) {
+                    ballSpeedX = -ballSpeedX
+                    ballSpeedY = -4;
+                }
+                if (ballY < playerY + paddleHeight && ballY >= playerY + paddleHeight / 2) {
+                    ballSpeedY = 4;
+                    ballSpeedX = -ballSpeedX;
+                }
+            }
+            if (ballX >= aiX - ballSize && ballX < aiX - ballSize / 2) {
+                if (ballY < aiY + paddleHeight && ballY > aiY - ballSize)
+                    ballSpeedX = -ballSpeedX;
             }
         }
+
 
         function player() {
             ctx.fillStyle = 'green';
@@ -96,7 +117,6 @@
         }
 
         window.addEventListener('mousemove', playerPosition);
-        topCanvas = canv.offsetTop;
 
         function playerPosition(e) {
             playerY = e.clientY - topCanvas - paddleHeight / 2;
@@ -160,7 +180,7 @@
             aiPosition()
         }
 
-        setInterval(game, 1000 / 60);
+        gameRender = setInterval(game, 1000 / 60);
     </script>
 </body>
 

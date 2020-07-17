@@ -66,11 +66,34 @@ section {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-content: center;
-    background-color: rgba(100, 100, 100, 0.5);
+    /* background-color: rgba(100, 100, 100, 0.5); */
     min-width: 30vw;
     min-height: 50vh;
     filter: drop-shadow(16px 16px 20px rgba(156, 217, 249));
+    font-family: 'Yatra One', cursive;
+    flex-direction: column;
+}
 
+.photo {
+    background-color: transparent;
+}
+
+img {
+    max-width: 25vw;
+    background-color: transparent;
+}
+
+h1,
+p {
+    margin: auto;
+    color: rgb(156, 217, 249);
+    font-size: 50px;
+    font-family: 'Yatra One', cursive;
+}
+
+
+nav a {
+    font-family: 'Yatra One', cursive;
 }
 
 nav a:hover {
@@ -92,15 +115,16 @@ nav a:hover {
 }
 
 .sectionAbout {
-    background-color: #100e0f;
+    background-color: #010b0e;
     color: white;
 }
 
-.sectionAbout h2 {
+h2 {
     color: rgb(156, 217, 249);
     animation: glow 2s ease-in-out infinite alternate;
     font-size: 4rem;
     text-transform: uppercase;
+    font-family: 'Yatra One', cursive;
 }
 
 

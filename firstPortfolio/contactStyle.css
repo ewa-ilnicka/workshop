@@ -63,7 +63,7 @@ body {
     color: #000;
 }
 
-.container .row100 .inputBox text {
+.container .row100 .inputBox .text {
     position: absolute;
     top: 0;
     left: 0;
@@ -71,6 +71,12 @@ body {
     font-size: 18px;
     padding: 0 10px;
     display: block;
-    transform: 0.3s;
+    transition: 0.3s;
     pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus+.text,
+.container .row100 .inputBox input:valid+.text {
+    top: -35px;
+    left: -10px;
 }

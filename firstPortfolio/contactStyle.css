@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+.sectionContact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,12 +13,12 @@ body {
     background-color: #03080a;
 }
 
-.container {
+.containerContact {
     width: 80%;
     padding: 20px;
 }
 
-.container h2 {
+.containerContact h2 {
     width: 100%;
     color: #9cd9f9;
     font-size: 36px;
@@ -26,14 +26,14 @@ body {
     margin-bottom: 10px;
 }
 
-.container .row100 {
+.containerContact .row100 {
     position: relative;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.container .row100 .col {
+.containerContact .row100 .col {
     position: relative;
     width: 100%;
     padding: 0 10px;
@@ -41,15 +41,15 @@ body {
     transition: 0.3s;
 }
 
-.container .row100 .inputBox {
+.containerContact .row100 .inputBox {
     position: relative;
     width: 100%;
     height: 40px;
     color: #9cd9f9;
 }
 
-.container .row100 .inputBox input,
-.container .row100 .textarea textarea {
+.containerContact .row100 .inputBox input,
+.containerContact .row100 .textarea textarea {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -65,7 +65,7 @@ body {
 
 
 
-.container .row100 .inputBox .text {
+.containerContact .row100 .inputBox .text {
     position: absolute;
     top: 0;
     left: 0;
@@ -79,13 +79,13 @@ body {
     width: 100%;
 }
 
-.container .row100 .inputBox input:focus+.text,
-.container .row100 .inputBox input:valid+.text {
+.containerContact .row100 .inputBox input:focus+.text,
+.containerContact .row100 .inputBox input:valid+.text {
     top: -35px;
     left: -10px;
 }
 
-.container .row100 .inputBox .line {
+.containerContact .row100 .inputBox .line {
     position: absolute;
     bottom: 0;
     display: block;
@@ -97,31 +97,31 @@ body {
     pointer-events: none;
 }
 
-.container .row100 .inputBox input:focus~.line,
-.container .row100 .inputBox input:valid~.line {
+.containerContact .row100 .inputBox input:focus~.line,
+.containerContact .row100 .inputBox input:valid~.line {
     height: 100%;
 }
 
-.container .row100 .textarea {
+.containerContact .row100 .textarea {
     position: relative;
     width: 100%;
     height: 100px;
     padding: 10px 0;
 }
 
-.container .row100 .inputBox .textarea textarea {
+.containerContact .row100 .inputBox .textarea textarea {
     height: 100%;
     resize: none;
 }
 
-.container .row100 .inputBox textarea:focus+.text,
-.container .row100 .inputBox textarea:valid+.text {
+.containerContact .row100 .inputBox textarea:focus+.text,
+.containerContact .row100 .inputBox textarea:valid+.text {
     top: -35px;
     left: -10px;
 }
 
-.container .row100 .inputBox textarea:focus~.line,
-.container .row100 .inputBox textarea:valid~.line {
+.containerContact .row100 .inputBox textarea:focus~.line,
+.containerContact .row100 .inputBox textarea:valid~.line {
     height: 100%;
 }
 

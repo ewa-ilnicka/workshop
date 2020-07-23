@@ -124,11 +124,22 @@ nav a:hover {
     background-color: #04121b
 }
 
-.sectionAbout {
-    background-color: #04121b;
+.aboutContener {
+    background-image: url(resources/photo.jpg);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
     color: white;
-
 }
+
+.bg {
+    background-color: rgba(4, 18, 27, 0.95);
+}
+
+.aboutContener p {
+    font-size: 30px;
+}
+
 
 h2 {
     color: rgb(156, 217, 249);

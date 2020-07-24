@@ -1,3 +1,10 @@
+/* Colors:
+Main - darkest blue #04121b rgb(4, 18, 27);
+Second - dark blue #042235 rgb(4, 34, 53);
+Third - light blue #8bb1ba 	rgb(139, 177, 186); 
+text color - #9cd9f9 rgb(156, 217, 249) */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +25,6 @@ nav {
 
 nav a {
     flex-grow: 1;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     text-align: center;
     color: white;
@@ -96,7 +102,7 @@ img {
 h1,
 h2 {
     margin: auto;
-    color: rgb(156, 217, 249);
+    color: #9cd9f9;
     font-size: 50px;
     font-family: 'Yatra One', cursive;
 }
@@ -108,7 +114,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    color: rgba(156, 217, 249);
+    color: #9cd9f9;
 }
 
 
@@ -144,7 +150,7 @@ nav a:hover {
 
 
 h3 {
-    color: rgb(156, 217, 249);
+    color: #9cd9f9;
     animation: glow 2s ease-in-out infinite alternate;
     font-size: 4rem;
     text-transform: uppercase;

@@ -94,7 +94,7 @@ img {
 }
 
 h1,
-p {
+h2 {
     margin: auto;
     color: rgb(156, 217, 249);
     font-size: 50px;
@@ -134,14 +134,16 @@ nav a:hover {
 
 .bg {
     background-color: rgba(4, 18, 27, 0.95);
+
 }
 
 .aboutContener p {
-    font-size: 30px;
+    font-size: 50px;
+    display: block;
 }
 
 
-h2 {
+h3 {
     color: rgb(156, 217, 249);
     animation: glow 2s ease-in-out infinite alternate;
     font-size: 4rem;

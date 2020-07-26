@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contactStyle.css">
+    <link rel="stylesheet" href="headerStyle.css">
     <meta name="description" content="Portfolio web site of frontend developer Ewa Ilnicka" />
     <meta name="keywords" content="portfolio, frontend, webdesign, developer, cv" />
     <meta name="author" content="Ewa Ilnicka" />
@@ -23,16 +24,16 @@
     </nav>
     <header>
         <div class="container">
-            <div class="content">
+            <div class="headerContent">
                 <div id="large-header" class="large-header">
                     <canvas id="demo-canvas"></canvas>
                     <div class="small-header">
-                        <div class="photo">
+                        <div class="headerPhoto">
                             <img src="resources/working_late.svg" alt="Girl with laptop at night">
                         </div>
                         <div class="title">
                             <h1>EWA ILNICKA</h1>
-                            <h2>Frontend developer</P>
+                            <h2>Frontend developer</h2>
                         </div>
                     </div>
                 </div>
@@ -40,12 +41,18 @@
         </div>
     </header>
     <section id="portfolio" class="sectionPortfolio">
-        <h3>Projekty</h2>
+        <h3>Projekty</h3>
     </section>
     <section id="about" class="sectionAbout">
-        <h3>O mnie</h2>
-            <section class="aboutContener">
-                <div class="bg">
+        <div class="aboutContainer">
+            <div class="aboutTitle">
+                <h3>O mnie</h3>
+            </div>
+            <section class="aboutContent">
+                <div class="myPhoto">
+                    <img src="resources/myPhoto.png" alt="Ewa Ilnicka">
+                </div>
+                <div class="p">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, autem quos? Sequi repudiandae
                         neque
                         inventore quia perferendis ducimus qui dignissimos praesentium. Repudiandae at itaque quis
@@ -62,60 +69,61 @@
                         quam mollitia sapiente sint saepe enim amet animi! Provident, quae!</p>
                 </div>
             </section>
+        </div>
     </section>
     <section id="skills" class="sectionSkills">
-        <h3>Umiejętności</h2>
+        <h3>Umiejętności</h3>
     </section>
 
     <section id="contact" class="sectionContact">
         <div class="containerContact">
-            <h3>Skontaktuj się ze mną</h2>
-                <div class="row100">
-                    <div class="col">
-                        <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span class="text">Imię</span>
-                            <span class="line"></span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span class="text">Nazwisko</span>
-                            <span class="line"></span>
-                        </div>
+            <h3>Skontaktuj się ze mną</h3>
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="text">Imię</span>
+                        <span class="line"></span>
                     </div>
                 </div>
-                <div class="row100">
-                    <div class="col">
-                        <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span class="text">Email</span>
-                            <span class="line"></span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span class="text">Mobile</span>
-                            <span class="line"></span>
-                        </div>
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="text">Nazwisko</span>
+                        <span class="line"></span>
                     </div>
                 </div>
-                <div class="row100">
-                    <div class="col">
-                        <div class="inputBox textarea">
-                            <textarea required="required"></textarea>
-                            <span class="text">Twoja wiadomość...</span>
-                            <span class="line"></span>
-                        </div>
+            </div>
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="text">Email</span>
+                        <span class="line"></span>
                     </div>
                 </div>
-                <div class="row100">
-                    <div class="col">
-                        <input type="submit" value="Wyślij">
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="text">Mobile</span>
+                        <span class="line"></span>
                     </div>
                 </div>
+            </div>
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox textarea">
+                        <textarea required="required"></textarea>
+                        <span class="text">Twoja wiadomość...</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row100">
+                <div class="col">
+                    <input type="submit" value="Wyślij">
+                </div>
+            </div>
         </div>
     </section>
     <footer>2020 Ewa Ilnicka</footer>

@@ -1,0 +1,58 @@
+.headerContent {
+    position: relative;
+    width: 100%;
+    background-image: url(resources/header3.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+.large-header {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.small-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    min-width: 90vw;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.headerPhoto,
+.title {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    min-width: 30vw;
+    min-height: 50vh;
+    filter: drop-shadow(16px 16px 20px rgba(156, 217, 249));
+    font-family: 'Yatra One', cursive;
+    flex-direction: column;
+}
+
+.headerPhoto {
+    background-color: transparent;
+}
+
+img {
+    max-width: 25vw;
+    background-color: transparent;
+}
+
+h1,
+h2 {
+    margin: auto;
+    color: #9cd9f9;
+    font-size: 50px;
+    font-family: 'Yatra One', cursive;
+}

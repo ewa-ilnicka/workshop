@@ -72,41 +72,12 @@ nav a:hover {
 
 .sectionAbout {
     background-color: #04121b;
-}
-
-
-.aboutTitle {
-    background-color: royalblue;
-    width: 100%;
-    flex-basis: 15vh;
-    align-self: auto;
-}
-
-.aboutContainer {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     min-height: 100vh;
-    background-color: #ddd;
 }
 
-.aboutContent {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    flex-grow: 1;
-    width: 100%;
-}
-
-.myPhoto {
-    flex-basis: 30%;
-    background-color: grey;
-}
-
-.p {
-    flex-grow: 1;
-    background-color: cadetblue;
-}
 
 h3 {
     color: #9cd9f9;
@@ -115,6 +86,38 @@ h3 {
     text-transform: uppercase;
     font-family: 'Yatra One', cursive;
 }
+
+.aboutTitle {
+    width: 100%;
+    /* flex-basis: 25vh; */
+    align-self: auto;
+}
+
+.aboutContent {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: stretch;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.myPhoto {
+    flex-basis: 30%;
+    min-width: 280px;
+}
+
+img {
+    opacity: 0.3;
+}
+
+
+.aboutText {
+    flex-grow: 1;
+
+    font-size: 50px;
+    color: white;
+}
+
 
 
 

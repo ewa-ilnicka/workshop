@@ -87,7 +87,9 @@ nav a:hover {
 h3 {
     color: #9cd9f9;
     animation: glow 2s ease-in-out infinite alternate;
-    font-size: 4rem;
+    width: 100%;
+    font-size: 36px;
+    /* font-size: 5vw; */
     text-transform: uppercase;
     font-family: 'Yatra One', cursive;
 }
@@ -107,16 +109,16 @@ h3 {
 }
 
 .myPhoto {
-    flex-grow: 1;
-    position: relative;
+    flex-basis: 30%;
+    /* position: relative; */
 }
 
 .myPhoto img {
     opacity: 0.3;
-    position: absolute;
-    top: 100%;
+    /* position: absolute; */
+    /* top: 100%;
     left: -20%;
-    transform: translate(0, -100%);
+    transform: translate(0, -100%); */
 }
 
 

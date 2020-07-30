@@ -1,0 +1,31 @@
+.sectionSkills {
+    padding-top: 20px;
+}
+
+.skillsTitle {
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.skillsTitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: lawngreen;
+}
+
+.skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}

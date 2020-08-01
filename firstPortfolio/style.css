@@ -18,18 +18,24 @@ nav {
     left: 0;
     right: 0;
     display: flex;
+    flex-direction: row-reverse;
     padding: 20px;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 nav a {
-    flex-grow: 1;
-    font-size: 30px;
+    /* flex-grow: 1; */
+    font-size: 24px;
     text-align: center;
     color: white;
     text-decoration: none;
     transition: 0.5s;
+    padding: 20px;
+}
+
+nav a:nth-child(1) {
+    color: lightskyblue;
 }
 
 header,

@@ -89,58 +89,24 @@ h3 {
     padding: 1rem;
 }
 
-.sectionAbout {
-    background-color: #04121b;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    min-height: 100vh;
+footer {
+    background-color: black;
+    color: #9cd9f9;
+    text-align: center;
+    padding: 2vh;
 }
 
-.sectionAbout p {
-    font-size: 22px;
+footer p {
+    padding: 1vh;
+}
+
+footer p a:link {
     color: white;
-    margin: 0.5rem;
 }
 
-.aboutTitle {
-    width: 100%;
-    flex-basis: 30vh;
-    margin-top: 0.5rem;
+footer p a:visited {
+    color: lightblue;
 }
-
-.aboutContent {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    flex-grow: 1;
-
-}
-
-.myPhoto {
-    flex-basis: 30%;
-    min-width: 25%;
-    flex-grow: auto;
-}
-
-.myPhoto img {
-    opacity: 0.3;
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    top: 100%;
-    left: 0;
-    transform: translate(0, -100%);
-}
-
-
-.aboutText {
-    flex-grow: 1;
-}
-
-
-
 
 @keyframes glow {
     from {

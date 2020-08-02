@@ -12,6 +12,10 @@ text color - #9cd9f9 rgb(156, 217, 249) */
     font-family: 'Ubuntu', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     position: fixed;
     top: 0;

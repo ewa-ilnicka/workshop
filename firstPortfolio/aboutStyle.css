@@ -1,49 +1,59 @@
 .sectionAbout {
+    min-height: 90vh;
     background-color: #04121b;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    min-height: 100vh;
+}
+
+.aboutContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 1.5fr 1fr;
+    grid-gap: 1rem;
+    grid-template-areas: "aboutTitle aboutTitle aboutTitle aboutTitle""myPhoto aboutText aboutText aboutText""myPhoto aboutText aboutText aboutText";
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.aboutTitle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1px 1px;
+    grid-template-areas: ". . ."". . .";
+    grid-area: aboutTitle;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.myPhoto {
+    grid-area: myPhoto;
+    object-fit: contain;
+    margin-bottom: 0;
+}
+
+.aboutText {
+    grid-area: aboutText;
+    margin-bottom: 0;
+}
+
+.myPhoto img {
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .sectionAbout p {
     font-size: 22px;
     color: white;
     margin: 0.5rem;
-}
-
-.aboutTitle {
-    width: 100%;
-    flex-basis: 30vh;
-    margin-top: 0.5rem;
-}
-
-.aboutContent {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    flex-grow: 1;
-
-}
-
-.myPhoto {
-    flex-basis: 30%;
-    min-width: 25%;
-    flex-grow: auto;
-}
-
-.myPhoto img {
-    opacity: 0.3;
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    top: 100%;
-    left: 0;
-    transform: translate(0, -100%);
+    padding: 5vh 5vh 0 5vh;
+    text-align: justify;
 }
 
 
-.aboutText {
-    flex-grow: 1;
+.sectionAbout p:nth-child(1) {
+    text-align: center;
 }

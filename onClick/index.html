@@ -35,9 +35,19 @@
     <button>Utwórz element</button>
     <script>
         const btn = document.querySelector("button");
-        btn.addEventListener("click", function () {
+        let number = 1;
+        const addElement = function () {
+            const newDiv = document.createElement("div");
+            newDiv.textContent = number;
 
-        })
+            if (number % 5 == 0) {
+                newDiv.classList.add("circle");
+            }
+
+            document.body.appendChild(newDiv);
+            number++;
+        }
+        btn.addEventListener("click", addElement);
     </script>
 </body>
 

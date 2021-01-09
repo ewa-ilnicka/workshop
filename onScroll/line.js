@@ -23,8 +23,10 @@ const changeHeight = function () {
 
     if (grow == true) {
         size += 10;
+        div.style.backgroundColor = "red";
     } else {
         size -= 10;
+        div.style.backgroundColor = "green";
     }
     div.style.height = size + "px";
 }

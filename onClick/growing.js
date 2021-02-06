@@ -6,7 +6,9 @@ btn.addEventListener("click", () => {
     console.log("działa");
     fontSize++;
     for (let i = 0; i < items.length; i++) {
-        items[i].style.display = "block";
+        if (!items[i].style.display) {
+            items[i].style.display = "block";
+        }
         items[i].style.fontSize = `${fontSize}px`;
     }
 })
